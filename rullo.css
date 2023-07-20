@@ -1,0 +1,60 @@
+#game {user-select: none;}
+.cursor {border: 3px red solid !important;}
+.lock,.remove {
+    position:absolute;
+    bottom:10px;
+    width:10px;
+    height:10px;
+    font-size:12px;
+}
+.guess>.lock{display:none;}
+.locked>.lock{
+    background-image: url("locked.png");
+    background-size:10px;
+}
+.lock {
+    left:10px;
+    background-image: url("unlocked.png");
+    background-size: 10px;
+}
+
+.remove {
+    right:10px;
+    background-color:red;
+}
+.green {color:green; text-align:center;}
+.red {color:red;text-align:center;}
+.yn {text-align: left;}
+.help {font-style:italic;}
+.number,.x,.xs,.xl,.y,.ys,.yl {width:60px;}
+.number {
+    position:relative;
+    height:60px;
+    cursor:pointer;
+    min-width:50px;
+    min-height:50px;
+    border:1px solid;
+    text-align:center;
+    font-size:200%;
+    border-color:white;
+}
+.locked {background-color:#ddd;color:blue;}
+.guess {color:#ddd;}
+.solve {color:red;}
+.factor {border-color:black;}
+.total {background-color:#aaa;text-align:center;}
+.done {background-color:yellow;}
+
+
+#controls {display:flex;
+           flex-direction: horizontal;
+           align-items: center;
+          }
+#controls p {font-weight: bold;}
+body {position:relative;}
+.vertical {
+    writing-mode: sideways-lr;
+    text-align:center;
+    padding-left: 20px;
+}
+    

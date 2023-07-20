@@ -1,51 +1,17 @@
-<SCRIPT src="../lib/jquery.js"></SCRIPT>
+<SCRIPT src="jquery.js"></SCRIPT>
 <SCRIPT src="rullo.js"></SCRIPT>
-<style>
-  .cursor {border: 3px red solid !important;}
-  .lock,.remove {
-      position:absolute;
-      bottom:10px;
-      width:10px;
-      height:10px;
-      font-size:7px;
-  }
-  .guess>.lock{display:none;}
-  .locked>.lock{background-color:#afa;}
-  .lock {
-      left:10px;
-      background-color:green;}
-
-  .remove {
-      right:10px;
-      background-color:red;
-  }
-  .green {color:green; text-align:center;}
-  .red {color:red;text-align:center;}
-  .number,.x,.xs,.xl,.y,.ys,.yl {width:60px;}
-  .number {
-      position:relative;
-      height:60px;
-      cursor:pointer;
-      min-width:50px;
-      min-height:50px;
-      border:1px solid;
-      text-align:center;
-      font-size:200%;
-      border-color:white;
-  }
-  .locked {background-color:#ddd;color:blue;}
-  .guess {color:#ddd;}
-  .solve {color:red;}
-  .factor {border-color:black;}
-  .total {background-color:#aaa;text-align:center;}
-  .done {background-color:yellow;}
-
-  
-  
-  </style>
+<link rel="stylesheet" href="rullo.css">
 <div id="controls">
-  N: <input type="text" id="N">
-  p: <input type="text" id="p">
+  <label id="gridsize">
+    <p>Size of grid: <span class="value">0</span></p>
+    <input type="range" id="N" min=4 max=10 step=1 list="Nmarks">
+    <datalist id="Nmarks"></datalist>
+  </label>
+  <label id="percentage">
+    <p>Percentage inactive: <span class="value">0</span></p>
+    <input type="range" id="p" min=0.1 max=0.9 step=0.1 list="pmarks">
+    <datalist id="pmarks"></datalist>
+  </label>
   <button id="new">New</button>
   <span id="win"></span>
 </div>

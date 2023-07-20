@@ -1,0 +1,10 @@
+CURSOR KEYS move the cursor around the grid
+SHIFT-CURSOR will "lock" a row or column
+SPACE triggers a number from active to inactive
+SHIFT-SPACE (or .) locks the number
+NUMBER keys highlight all digits which have that number as a factor
+- e.g. "2" will highlight 2s, 4s, and 8s.
+COMMAND-Z undoes the last step
+
+CLICKING on a number toggles its activity
+CLICKING on the green box locks that number
